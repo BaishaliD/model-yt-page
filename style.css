@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* width: 100vw; */
+}
+
+/* NAV BAR */
+
+header{
+    /* width: 100vw; */
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile-image img, #youtube-icon img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #616161;
+}
+
+input{
+    max-width: 400px;
+    height: 30px;
+}
+
+/* BODY LAYOUT*/
+
+main{
+    width: 100vw;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-section{
+    width: 70%;
+}
+
+#aside-section{
+    width: 30%;
+}
+
+
+
+/* BODY STYLES */
+
+.video-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+iframe{
+    max-width: 100%;
+    max-height: 395px;
+    margin-bottom: 20px;
+}
+
+#video-title{
+    width: 100%;
+    font-size: 2rem;
+}
+
+#stats-and-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.video-info{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    color: grey;
+}
+
+#stats span{
+    margin: 0 5px;
+}
+
+#actions div{
+    margin: 0 10px;
+}
+
+.video-info div span{
+    margin: 0 5px;
+}
+
+#title-bar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.hr-line{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+#title-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#title-bar div{
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+}
+
+#subs-btn{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1rem;
+}
+
+#content{
+    margin-bottom: 20px;
+    height: 120px;
+    overflow: hidden;
+}
+
+#show-more{
+    border: none;
+    color: grey;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+/* ASIDE SECTION */
+
+#aside-heading{
+    font-size: 1.2rem;
+}
+
+.card{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.cardImg{
+    height: 120px;
+    width: 40%;
+}
+
+.cardMenu{
+    height: 100%;
+    width: 10%;
+}
+
+.cardInfo{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;    
+}
+
+.cardTitle{
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.uploader, .views{
+    color: grey;
+}
+
+/* COMMENTS SECTION */
+.commentCard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0; 
+    padding: 20px;
+}
+
+.commentImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.commentInfo{
+    padding: 0 10px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    color: grey;
+    margin-top: 5px;
+}
+
+.actions div{
+    margin-right: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 992px){
+    main{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    #main-section{
+        width: 100%;
+    }
+    
+    #aside-section{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 922px){
+    .nav-search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px){
+    #stats-and-actions{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #actions{
+        margin-top: 20px;
+    }
+
+    header div{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #stats-and-actions{
+        flex-direction: column;
+    }
+    #actions span{
+        display: none;
+    }
+}
+
